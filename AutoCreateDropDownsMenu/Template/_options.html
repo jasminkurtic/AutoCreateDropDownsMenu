@@ -1,5 +1,4 @@
-﻿<h1>{{datas.length}}</h1>
-<div class="row" ng-if="datas.length > 0">
+﻿<div class="row" ng-if="datas.length > 0">
     <div class="col-lg-11">
         <div class="col-lg-4 col-xs-12 col-md-3  form-group" ng-repeat="elem in selects">
             <select id="{{elem.inx}}" class="form-control" ng-model="node" ng-options="data.name for data in datas | elementId:elem.id" ng-change="newOption(node, $index, selects, datas)"></select>
